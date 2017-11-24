@@ -1,10 +1,11 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -27,8 +28,8 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/a106/proprietary/bin/mtk_agpsd:system/bin/mtk_agpsd \
     vendor/micromax/a106/proprietary/bin/mtkrild:system/bin/mtkrild \
     vendor/micromax/a106/proprietary/bin/muxreport:system/bin/muxreport \
-    vendor/micromax/a106/proprietary/bin/nvram_daemon:system/bin/nvram_daemon \
     vendor/micromax/a106/proprietary/bin/nvram_agent_binder:system/bin/nvram_agent_binder \
+    vendor/micromax/a106/proprietary/bin/nvram_daemon:system/bin/nvram_daemon \
     vendor/micromax/a106/proprietary/bin/thermal_manager:system/bin/thermal_manager \
     vendor/micromax/a106/proprietary/bin/wmt_loader:system/bin/wmt_loader \
     vendor/micromax/a106/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
@@ -61,13 +62,11 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/a106/proprietary/lib/hw/gralloc.mt6582.so:system/lib/hw/gralloc.mt6582.so \
     vendor/micromax/a106/proprietary/lib/hw/hwcomposer.mt6582.so:system/lib/hw/hwcomposer.mt6582.so \
     vendor/micromax/a106/proprietary/lib/hw/lights.default.so:system/lib/hw/lights.default.so \
-    vendor/micromax/a106/proprietary/lib/hw/sensors.mt6582.so:system/lib/hw/sensors.mt6582.so \
     vendor/micromax/a106/proprietary/lib/hw/memtrack.mt6582.so:system/lib/hw/memtrack.mt6582.so \
     vendor/micromax/a106/proprietary/lib/hw/radio.fm.mt6582.so:system/lib/hw/radio.fm.mt6582.so \
+    vendor/micromax/a106/proprietary/lib/hw/sensors.mt6582.so:system/lib/hw/sensors.mt6582.so \
     vendor/micromax/a106/proprietary/lib/lib3a.so:system/lib/lib3a.so \
     vendor/micromax/a106/proprietary/lib/lib3a_sample.so:system/lib/lib3a_sample.so \
-    vendor/micromax/a106/proprietary/lib/libaed.so:system/lib/libaed.so \
-    vendor/micromax/a106/proprietary/lib/libfmjni.so:system/lib/libfmjni.so \
     vendor/micromax/a106/proprietary/lib/libJpgEncPipe.so:system/lib/libJpgEncPipe.so \
     vendor/micromax/a106/proprietary/lib/libMali.so:system/lib/libMali.so \
     vendor/micromax/a106/proprietary/lib/libMtkOmxAdpcmDec.so:system/lib/libMtkOmxAdpcmDec.so \
@@ -83,14 +82,15 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/a106/proprietary/lib/libMtkOmxVdec.so:system/lib/libMtkOmxVdec.so \
     vendor/micromax/a106/proprietary/lib/libMtkOmxVenc.so:system/lib/libMtkOmxVenc.so \
     vendor/micromax/a106/proprietary/lib/libMtkOmxVorbisEnc.so:system/lib/libMtkOmxVorbisEnc.so \
+    vendor/micromax/a106/proprietary/lib/libaed.so:system/lib/libaed.so \
     vendor/micromax/a106/proprietary/lib/libaudiocompensationfilter.so:system/lib/libaudiocompensationfilter.so \
     vendor/micromax/a106/proprietary/lib/libaudiocomponentengine.so:system/lib/libaudiocomponentengine.so \
     vendor/micromax/a106/proprietary/lib/libaudiocustparam.so:system/lib/libaudiocustparam.so \
     vendor/micromax/a106/proprietary/lib/libaudiodcrflt.so:system/lib/libaudiodcrflt.so \
     vendor/micromax/a106/proprietary/lib/libaudiomtkdcremoval.so:system/lib/libaudiomtkdcremoval.so \
-    vendor/micromax/a106/proprietary/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
-    vendor/micromax/a106/proprietary/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
     vendor/micromax/a106/proprietary/lib/libaudiopolicyenginedefault.so:system/lib/libaudiopolicyenginedefault.so \
+    vendor/micromax/a106/proprietary/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
+    vendor/micromax/a106/proprietary/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
     vendor/micromax/a106/proprietary/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
     vendor/micromax/a106/proprietary/lib/libaudiosetting.so:system/lib/libaudiosetting.so \
     vendor/micromax/a106/proprietary/lib/libbessound_hd_mtk.so:system/lib/libbessound_hd_mtk.so \
@@ -126,6 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/a106/proprietary/lib/libfeatureio.so:system/lib/libfeatureio.so \
     vendor/micromax/a106/proprietary/lib/libfile_op.so:system/lib/libfile_op.so \
     vendor/micromax/a106/proprietary/lib/libfmcust.so:system/lib/libfmcust.so \
+    vendor/micromax/a106/proprietary/lib/libfmjni.so:system/lib/libfmjni.so \
     vendor/micromax/a106/proprietary/lib/libgralloc_extra.so:system/lib/libgralloc_extra.so \
     vendor/micromax/a106/proprietary/lib/libhwm.so:system/lib/libhwm.so \
     vendor/micromax/a106/proprietary/lib/libimageio.so:system/lib/libimageio.so \
@@ -142,14 +143,15 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/a106/proprietary/lib/libmtkjpeg.so:system/lib/libmtkjpeg.so \
     vendor/micromax/a106/proprietary/lib/libmtkplayer.so:system/lib/libmtkplayer.so \
     vendor/micromax/a106/proprietary/lib/libnvram.so:system/lib/libnvram.so \
-    vendor/micromax/a106/proprietary/lib/libnvram_sec.so:system/lib/libnvram_sec.so \
     vendor/micromax/a106/proprietary/lib/libnvram_daemon_callback.so:system/lib/libnvram_daemon_callback.so \
     vendor/micromax/a106/proprietary/lib/libnvram_platform.so:system/lib/libnvram_platform.so \
+    vendor/micromax/a106/proprietary/lib/libnvram_sec.so:system/lib/libnvram_sec.so \
     vendor/micromax/a106/proprietary/lib/librilmtk.so:system/lib/librilmtk.so \
     vendor/micromax/a106/proprietary/lib/libsched.so:system/lib/libsched.so \
     vendor/micromax/a106/proprietary/lib/libspeech_enh_lib.so:system/lib/libspeech_enh_lib.so \
     vendor/micromax/a106/proprietary/lib/libssladp.so:system/lib/libssladp.so \
     vendor/micromax/a106/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    vendor/micromax/a106/proprietary/lib/libstlport.so:system/lib/libstlport.so \
     vendor/micromax/a106/proprietary/lib/libvcodec_utility.so:system/lib/libvcodec_utility.so \
     vendor/micromax/a106/proprietary/lib/libvcodecdrv.so:system/lib/libvcodecdrv.so \
     vendor/micromax/a106/proprietary/lib/mtk-ril.so:system/lib/mtk-ril.so \
@@ -161,5 +163,4 @@ PRODUCT_COPY_FILES += \
     vendor/micromax/a106/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/micromax/a106/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/micromax/a106/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/micromax/a106/proprietary/xbin/mnld:system/xbin/mnld \
-    vendor/micromax/a106/proprietary/lib/libstlport.so:system/lib/libstlport.so
+    vendor/micromax/a106/proprietary/xbin/mnld:system/xbin/mnld
